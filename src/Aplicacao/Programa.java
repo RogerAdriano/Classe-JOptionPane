@@ -6,11 +6,14 @@ public class Programa {
 
 	public static void main(String[] args) {
 		
-		String nome = JOptionPane.showInputDialog("Qual o seu nome: ");
+		String num1 = JOptionPane.showInputDialog("Digite o primeiro numero: ");
+		String num2 = JOptionPane.showInputDialog("Digite o segundo numero: ");
 		
-		String menssagem = String.format("Bem vindo, %s, a programação Java!", nome);  // String.format() formata e retorna uma String
+		int numero1 = Integer.parseInt(num1);
+		int numero2 = Integer.parseInt(num2);
 		
-		JOptionPane.showMessageDialog(null, menssagem);
+		JOptionPane.showMessageDialog(null, numero1 + " + " + numero2 + " = " + (numero1 + numero2));
+		
 	}
 
 }
